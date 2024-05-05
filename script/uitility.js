@@ -27,3 +27,15 @@ function getARandomAlphabets(){
     const alphabet = alphabets[randomNumber];
     return alphabet;
 }
+
+function getElementValueById(elementId){
+    const element = document.getElementById(elementId);
+    const elementValueText = element.innerText;
+    const elementValue = parseInt(elementValueText);
+    return elementValue;
+}
+
+function setElementValueText(elementId, value){
+    const element = document.getElementById(elementId);
+    element.innerText = value;
+}
